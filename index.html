@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | Interactive card details form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      .my-bg {
+        background: linear-gradient(
+          164.33deg,
+          #220931 6.35%,
+          #3d114e 13.91%,
+          #4a1951 23.02%,
+          #532339 31.88%,
+          #302d5c 41.49%,
+          #24143b 54.8%,
+          #20082c 100.92%
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <main class="flex">
+      <section class="my-bg">
+        <article>
+          <div>0000 0000 0000 0000</div>
+          <div>Jane Appleseed 00/00</div>
+        </article>
+        <article>000</article>
+      </section>
+      <section>
+        <form>
+          <div>
+            <label for="name">Cardholder's Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Jane Appleseed"
+            />
+          </div>
+          <div>
+            <label for="card-number">Card Number</label>
+            <input
+              type="text"
+              id="card-number"
+              name="card-number"
+              placeholder="0000 0000 0000 0000"
+            />
+          </div>
+          <div>
+            <label for="expiry-date">Expiry Date</label>
+            <input
+              type="text"
+              id="expiry-year"
+              name="expiry-year"
+              placeholder="00/00"
+            />
+            <input
+              type="text"
+              id="expiry-month"
+              name="expiry-month"
+              placeholder="00/00"
+            />
+          </div>
+          <div>
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" name="cvv" placeholder="000" />
+          </div>
+          <button>Confirm</button>
+        </form>
+
+        <!-- Completed state start -->
+        <div>
+          <p>Thank you!</p>
+          <p>We've added your card details</p>
+          <button>Continue</button>
+        </div>
+      </section>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Hamza safwan</a>.
+    </div>
+  </body>
+</html>
