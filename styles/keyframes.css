@@ -1,0 +1,52 @@
+@keyframes left_to_right {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+
+    @keyframes grow {
+        from {
+            height: 0;
+        }
+
+        to {
+            height: 25vh;
+        }
+
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+
+    @keyframes grow {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 25%;
+        }
+
+    }
+}
+
+
+@keyframes form_animation {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
