@@ -1,18 +1,29 @@
-form.addEventListener("submit", (e) => {
+form.addEventListener("submit", function (e) {
   e.preventDefault();
-  //check input values if are not empty
-  cvv.value.trim() === "" ? isError(cvv, "CVV is required") : isNotError(cvv);
+  const formInputs = [
+    owner_name,
+    cardNumber,
+    expiryMonth,
+    expiryYear,
+    cvv,
+  ].reverse();
+  const isFormValid = checkFormValidity(formInputs);
+  const isFormNotEmpty = checkForm(formInputs);
+  if (isFormNotEmpty && isFormValid) {
+    console.log(isFormNotEmpty, isFormValid);
+    form.reset();
+    // then hide form and show success message
+    form.classList.add("hidden");
+    successMessage.classList.remove("hidden");
+  } else {
+    return;
+  }
+});
 
-  expiryMonth.value.trim() === ""
-    ? isError(expiryMonth, "Expiry Year is required")
-    : isNotError(expiryMonth);
-  expiryYear.value.trim() === ""
-    ? isError(expiryYear, "Expiry Month is required")
-    : isNotError(expiryYear);
-  cardNumber.value.trim() === ""
-    ? isError(cardNumber, "Card Number is required")
-    : isNotError(cardNumber);
-  owner_name.value.trim() === ""
-    ? isError(owner_name, "Name is required")
-    : isNotError(owner_name);
+// reset form when click successBtn button
+successBtn.addEventListener("click", function () {
+  resetCard();
+  form.reset();
+  successMessage.classList.add("hidden");
+  form.classList.remove("hidden");
 });

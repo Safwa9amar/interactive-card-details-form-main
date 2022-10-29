@@ -1,0 +1,13 @@
+<svg width="82" height="80" viewBox="0 0 82 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<ellipse cx="41" cy="40" rx="41" ry="40" fill="url(#paint0_linear_42_2)"/>
+<defs>
+<linearGradient id="paint0_linear_42_2" x1="41" y1="0" x2="41" y2="80" gradientUnits="userSpaceOnUse">
+<stop stop-color="#6238E4"/>
+<stop offset="0.335051" stop-color="#622DD5"/>
+<stop offset="0.499917" stop-color="#6320BE"/>
+<stop offset="0.673942" stop-color="#6316B4"/>
+<stop offset="0.843387" stop-color="#610DA1"/>
+<stop offset="1" stop-color="#5F11A6"/>
+</linearGradient>
+</defs>
+</svg>

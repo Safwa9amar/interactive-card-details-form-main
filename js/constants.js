@@ -13,3 +13,10 @@ const expiryMonthElement = document.getElementById("card_exipre_m");
 const expiryYearElement = document.getElementById("card_exipre_y");
 const cvvElement = document.getElementById("card_cvv");
 const ownerNameElement = document.getElementById("owner_name");
+
+// get form button by id
+const submitBtn = document.getElementById("submit-btn");
+//get success message by id
+const successMessage = document.getElementById("successMessage");
+//get the button from success message element
+const successBtn = document.getElementById("success-btn");
