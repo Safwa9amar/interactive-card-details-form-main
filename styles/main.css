@@ -2482,6 +2482,26 @@ video {
     left: 66.666667%;
   }
 
+  .md\:left-\[\] {
+    left: ;
+  }
+
+  .md\:left-\[60\%\] {
+    left: 60%;
+  }
+
+  .md\:left-\[66\%\] {
+    left: 66%;
+  }
+
+  .md\:left-1 {
+    left: 0.25rem;
+  }
+
+  .md\:-right-1 {
+    right: -0.25rem;
+  }
+
   .md\:flex {
     display: flex;
   }
